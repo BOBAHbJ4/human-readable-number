@@ -795,6 +795,12 @@ it('Should return \'one hundred thirty one\' when 131 given', () => {
   assert.equal(readable, 'one hundred thirty one');
 });
 
+it('Should return \'one hundred forty\' when 140 given', () => {
+    const readable = toReadable(140);
+
+    assert.equal(readable, 'one hundred forty');
+});
+
 it('Should return \'one hundred thirty two\' when 132 given', () => {
   const readable = toReadable(132);
 
@@ -841,12 +847,6 @@ it('Should return \'one hundred thirty nine\' when 139 given', () => {
   const readable = toReadable(139);
 
   assert.equal(readable, 'one hundred thirty nine');
-});
-
-it('Should return \'one hundred forty\' when 140 given', () => {
-  const readable = toReadable(140);
-
-  assert.equal(readable, 'one hundred forty');
 });
 
 it('Should return \'one hundred forty one\' when 141 given', () => {
